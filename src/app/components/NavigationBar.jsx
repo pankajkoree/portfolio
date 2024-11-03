@@ -3,7 +3,7 @@ import React from "react";
 
 const NavigationBar = () => {
   return (
-    <div className="relative flex justify-center top-4">
+    <div className="relative flex justify-center top-4 text-gray-500">
       <div className="relative flex bg-red-400 p-2">
         <Button variant="nav">Home</Button>
         <Button variant="nav">Projects</Button>
