@@ -1,9 +1,13 @@
+import { Button } from "@/components/ui/button";
 import React from "react";
 
 const NavigationBar = () => {
   return (
     <div>
-      <h1>Navigation Bar</h1>
+      <Button>Home</Button>
+      <Button>Projects</Button>
+      <Button>About</Button>
+      <Button>Contact</Button>
     </div>
   );
 };
