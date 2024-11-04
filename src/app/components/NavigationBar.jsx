@@ -8,20 +8,16 @@ const NavigationBar = () => {
   const router = useRouter();
 
   const gotoHome = () => {
-    console.log("home page");
     router.push("/");
   };
 
   const gotoProjects = () => {
-    console.log("projects page");
     router.push("/projects");
   };
   const gotoAbout = () => {
-    console.log("about page");
     router.push("/about");
   };
   const gotoContact = () => {
-    console.log("contact page");
     router.push("/contact");
   };
   return (
