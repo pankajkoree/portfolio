@@ -21,7 +21,7 @@ const NavigationBar = () => {
     router.push("/contact");
   };
   return (
-    <div className="relative flex justify-center top-4 text-gray-600">
+    <div className="relative flex justify-center top-2 text-gray-600">
       <div className="relative flex bg-blue-200 p-2 rounded-full text-xl">
         <Button variant="nav" className="hover:scale-125" onClick={gotoHome}>
           Home
