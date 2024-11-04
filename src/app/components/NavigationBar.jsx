@@ -5,10 +5,18 @@ const NavigationBar = () => {
   return (
     <div className="relative flex justify-center top-4 text-gray-600">
       <div className="relative flex bg-blue-200 p-2 rounded-full text-xl">
-        <Button variant="nav">Home</Button>
-        <Button variant="nav">Projects</Button>
-        <Button variant="nav">About</Button>
-        <Button variant="nav">Contact</Button>
+        <Button variant="nav" className="hover:scale-125">
+          Home
+        </Button>
+        <Button variant="nav" className="hover:scale-125">
+          Projects
+        </Button>
+        <Button variant="nav" className="hover:scale-125">
+          About
+        </Button>
+        <Button variant="nav" className="hover:scale-125">
+          Contact
+        </Button>
       </div>
     </div>
   );
