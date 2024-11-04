@@ -1,11 +1,7 @@
-import Footer from "./components/Footer";
-import NavigationBar from "./components/NavigationBar";
-
 export default function Home() {
   return (
     <div>
-      <NavigationBar />
-      <Footer />
+      <h1>Home page</h1>
     </div>
   );
 }

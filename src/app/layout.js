@@ -1,3 +1,5 @@
+import Footer from "./components/Footer";
+import NavigationBar from "./components/NavigationBar";
 import "./globals.css";
 
 export const metadata = {
@@ -8,7 +10,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="font-poppins">{children}</body>
+      <body className="font-poppins">
+        <NavigationBar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
