@@ -5,15 +5,54 @@ import linkedin from "../../../public/linkedin.jpg";
 import youtube from "../../../public/youtube.webp";
 import sololearn from "../../../public/sololearn.png";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const Footer = () => {
+  const router = useRouter();
+
+  const gotoGithub = () => {
+    router.push("https://github.com/pankajkoree");
+  };
+
+  const gotoLinkedIn = () => {
+    router.push("https://www.linkedin.com/in/pankaj-koree/");
+  };
+
+  const gotoSololearn = () => {
+    router.push("https://www.sololearn.com/en/profile/13478902");
+  };
+
+  const gotoYoutube = () => {
+    router.push("https://www.youtube.com/@pankajkori");
+  };
+
   return (
     <div className="relative flex flex-col justify-center top-12 gap-4 text-gray-600 text-xl">
       <div className="relative flex justify-center ">
-        <Image src={github} alt="github" className="w-[50px] h-[50px]" />
-        <Image src={linkedin} alt="linkedin" className="w-[50px] h-[50px]" />
-        <Image src={youtube} alt="youtube" className="w-[50px] h-[50px]" />
-        <Image src={sololearn} alt="sololearn" className="w-[50px] h-[50px]" />
+        <Image
+          src={github}
+          alt="github"
+          className="w-[50px] h-[50px]"
+          onClick={gotoGithub}
+        />
+        <Image
+          src={linkedin}
+          alt="linkedin"
+          className="w-[50px] h-[50px]"
+          onClick={gotoLinkedIn}
+        />
+        <Image
+          src={youtube}
+          alt="youtube"
+          className="w-[50px] h-[50px]"
+          onClick={gotoYoutube}
+        />
+        <Image
+          src={sololearn}
+          alt="sololearn"
+          className="w-[50px] h-[50px]"
+          onClick={gotoSololearn}
+        />
       </div>
       <div className="relative flex justify-center ">
         <p>
