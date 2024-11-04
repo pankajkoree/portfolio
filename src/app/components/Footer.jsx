@@ -34,25 +34,25 @@ const Footer = () => {
         <Image
           src={github}
           alt="github"
-          className="w-[50px] h-[50px]"
+          className="w-[50px] h-[50px] hover:cursor-pointer"
           onClick={gotoGithub}
         />
         <Image
           src={linkedin}
           alt="linkedin"
-          className="w-[50px] h-[50px]"
+          className="w-[50px] h-[50px] hover:cursor-pointer"
           onClick={gotoLinkedIn}
         />
         <Image
           src={youtube}
           alt="youtube"
-          className="w-[50px] h-[50px]"
+          className="w-[50px] h-[50px] hover:cursor-pointer"
           onClick={gotoYoutube}
         />
         <Image
           src={sololearn}
           alt="sololearn"
-          className="w-[50px] h-[50px]"
+          className="w-[50px] h-[50px] hover:cursor-pointer"
           onClick={gotoSololearn}
         />
       </div>
