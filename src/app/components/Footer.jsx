@@ -60,7 +60,7 @@ const Footer = () => {
         <p>
           © 2024{" "}
           <Link
-            className="underline hover:font-bold"
+            className="underline hover:text-blue-500"
             href="https://github.com/pankajkoree"
           >
             Pankaj Kori
