@@ -23,20 +23,16 @@ const NavigationBar = () => {
   return (
     <div className="relative flex justify-center top-2 text-gray-600">
       <div className="relative flex bg-blue-200 p-2 rounded-full text-xl">
-        <Button variant="nav" className="hover:scale-125" onClick={gotoHome}>
+        <Button variant="nav" onClick={gotoHome}>
           Home
         </Button>
-        <Button
-          variant="nav"
-          className="hover:scale-125"
-          onClick={gotoProjects}
-        >
+        <Button variant="nav" onClick={gotoProjects}>
           Projects
         </Button>
-        <Button variant="nav" className="hover:scale-125" onClick={gotoAbout}>
+        <Button variant="nav" onClick={gotoAbout}>
           About
         </Button>
-        <Button variant="nav" className="hover:scale-125" onClick={gotoContact}>
+        <Button variant="nav" onClick={gotoContact}>
           Contact
         </Button>
       </div>
