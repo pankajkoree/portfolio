@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="relative flex flex-col justify-center top-12 gap-4">
+    <div className="relative flex flex-col justify-center top-12 gap-4 text-gray-600 text-xl">
       <div className="relative flex justify-center ">
         <Image src={github} alt="github" className="w-[50px] h-[50px]" />
         <Image src={linkedin} alt="linkedin" className="w-[50px] h-[50px]" />
@@ -19,7 +19,7 @@ const Footer = () => {
         <p>
           © 2024{" "}
           <Link
-            className="underline hover:text-green-300"
+            className="underline hover:font-bold"
             href="https://github.com/pankajkoree"
           >
             Pankaj Kori
