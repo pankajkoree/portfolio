@@ -3,8 +3,8 @@ import React from "react";
 
 const NavigationBar = () => {
   return (
-    <div className="relative flex justify-center top-4 text-gray-500">
-      <div className="relative flex bg-red-400 p-2">
+    <div className="relative flex justify-center top-4 text-gray-600 font-bold">
+      <div className="relative flex bg-blue-200 p-2 rounded-full text-xl">
         <Button variant="nav">Home</Button>
         <Button variant="nav">Projects</Button>
         <Button variant="nav">About</Button>
