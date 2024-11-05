@@ -22,7 +22,7 @@ const NavigationBar = () => {
   };
   return (
     <div className="relative flex justify-center top-2 text-gray-600">
-      <div className="relative flex bg-blue-200 p-2 rounded-full">
+      <div className="relative flex bg-blue-200 p-1 xl:p-2 rounded-full">
         <Button variant="nav" onClick={gotoHome}>
           Home
         </Button>
