@@ -8,7 +8,9 @@ const Contact = () => {
   return (
     <div>
       <div className="relative flex flex-col xl:p-4 xl:mx-auto justify-center xl:border xl:border-blue-200 xl:hover:shadow-md xl:hover:shadow-green-300 xl:max-w-4xl rounded-xl m-16">
-        <h2 className="text-3xl font-bold text-center mb-6">Contact Me</h2>
+        <h2 className="text-3xl font-bold text-center mb-6 text-gray-800">
+          Contact Me
+        </h2>
         <p className="text-center text-gray-600 mb-8">
           Feel free to reach out if you have any questions or would like to
           collaborate!
@@ -18,7 +20,7 @@ const Contact = () => {
           <div className="flex flex-col">
             <Label
               htmlFor="name"
-              className="xl:text-xl font-semibold text-gray-700 mb-1"
+              className="xl:text-xl font-semibold text-gray-600 mb-1"
             >
               Name:
             </Label>
@@ -35,7 +37,7 @@ const Contact = () => {
           <div className="flex flex-col">
             <Label
               htmlFor="email"
-              className="xl:text-xl font-semibold text-gray-700 mb-1"
+              className="xl:text-xl font-semibold text-gray-600 mb-1"
             >
               Email:
             </Label>
@@ -52,7 +54,7 @@ const Contact = () => {
           <div className="flex flex-col">
             <Label
               htmlFor="message"
-              className="text-xl font-semibold text-gray-700 mb-1"
+              className="text-xl font-semibold text-gray-600 mb-1"
             >
               Message:
             </Label>
