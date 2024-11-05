@@ -19,7 +19,7 @@ const Contact = () => {
           <div className="flex flex-col">
             <Label
               htmlFor="name"
-              className="text-base sm:text-xl font-semibold text-gray-600 mb-1"
+              className="text-base sm:text-xl font-semibold text-gray-600 dark:text-white mb-1"
             >
               Name:
             </Label>
@@ -36,7 +36,7 @@ const Contact = () => {
           <div className="flex flex-col">
             <Label
               htmlFor="email"
-              className="text-base sm:text-xl font-semibold text-gray-600 mb-1"
+              className="text-base sm:text-xl font-semibold text-gray-600 dark:text-white mb-1"
             >
               Email:
             </Label>
@@ -53,7 +53,7 @@ const Contact = () => {
           <div className="flex flex-col">
             <Label
               htmlFor="message"
-              className="text-base sm:text-xl font-semibold text-gray-600 mb-1"
+              className="text-base sm:text-xl font-semibold text-gray-600 dark:text-white mb-1"
             >
               Message:
             </Label>
