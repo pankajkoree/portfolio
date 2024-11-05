@@ -1,18 +1,13 @@
-"use client"; // This marks the entire component as client-side
-
+"use client";
 import Footer from "./components/Footer";
 import NavigationBar from "./components/NavigationBar";
 import "./globals.css";
 import { useEffect, useState } from "react";
 
-// Remove the metadata export from here
-// You can handle metadata in a separate server-side file if needed
-
 export default function RootLayout({ children }) {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
-    // Check user's preference or system preference for dark mode
     const darkModePreference =
       localStorage.getItem("theme") === "dark" ||
       window.matchMedia("(prefers-color-scheme: dark)").matches;
