@@ -2,6 +2,7 @@ import Image from "next/image";
 import download from "../../../public/download.png";
 import myimage from "../../../public/pankaj-3.png";
 import { Button } from "@/components/ui/button";
+import html from "../../../public/html.png";
 
 const About = () => {
   return (
@@ -57,12 +58,13 @@ const About = () => {
               Building responsive and modern interfaces
             </p>
           </div>
-          <div>
-            <Button variant="language">HTML</Button>
-            <Button>CSS</Button>
-            <Button>JavaScript</Button>
-            <Button>React</Button>
-            <Button>Tailwind CSS</Button>
+          <div className="relative flex gap-2 text-xl">
+            <div className="relative flex justify-center items-center gap-1 border-2 border-blue-400 p-2 w-[160px] rounded-lg">
+              <Image src={html} alt="html" className="w-[20px] h-[20px]" />
+              <p>HTML</p>
+            </div>
+
+           
           </div>
         </div>
         <div className="relative border border-blue-300 p-3 rounded-xl xl:w-[50%]">
