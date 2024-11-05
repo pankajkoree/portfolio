@@ -29,30 +29,30 @@ const Footer = () => {
   };
 
   return (
-    <div className="relative flex flex-col justify-center top-4 gap-4 text-gray-600 text-xl">
+    <div className="relative flex flex-col justify-center top-2 xl:top-4 gap-2 xl:gap-4 text-gray-600 text-[16px] xl:text-xl">
       <div className="relative flex justify-center ">
         <Image
           src={github}
           alt="github"
-          className="w-[50px] h-[50px] hover:cursor-pointer"
+          className="w-[36px] xl:w-[50px] h-[36px] xl:h-[50px] hover:cursor-pointer"
           onClick={gotoGithub}
         />
         <Image
           src={linkedin}
           alt="linkedin"
-          className="w-[50px] h-[50px] hover:cursor-pointer"
+          className="w-[36px] xl:w-[50px] h-[36px] xl:h-[50px] hover:cursor-pointer"
           onClick={gotoLinkedIn}
         />
         <Image
           src={youtube}
           alt="youtube"
-          className="w-[50px] h-[50px] hover:cursor-pointer"
+          className="w-[36px] xl:w-[50px] h-[36px] xl:h-[50px] hover:cursor-pointer"
           onClick={gotoYoutube}
         />
         <Image
           src={sololearn}
           alt="sololearn"
-          className="w-[50px] h-[50px] hover:cursor-pointer"
+          className="w-[36px] xl:w-[50px] h-[36px] xl:h-[50px] hover:cursor-pointer"
           onClick={gotoSololearn}
         />
       </div>
