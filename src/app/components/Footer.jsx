@@ -29,7 +29,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="relative flex flex-col justify-center top-12 gap-4 text-gray-600 text-xl">
+    <div className="relative flex flex-col justify-center top-4 gap-4 text-gray-600 text-xl">
       <div className="relative flex justify-center ">
         <Image
           src={github}
