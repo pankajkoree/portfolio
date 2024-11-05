@@ -58,7 +58,7 @@ const About = () => {
             </p>
           </div>
           <div>
-            <Button variant="outline">HTML</Button>
+            <Button variant="language">HTML</Button>
             <Button>CSS</Button>
             <Button>JavaScript</Button>
             <Button>React</Button>
