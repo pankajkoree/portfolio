@@ -15,6 +15,8 @@ const buttonVariants = cva(
           "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
         outline:
           "border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground",
+        language:
+          "border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground",
         submit:
           " bg-blue-400 shadow-sm hover:bg-green-600 text-white text-xl h-[48px] rounded-xl",
         secondary:
