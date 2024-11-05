@@ -30,7 +30,7 @@ export default function Home() {
       </h2>
 
       <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mt-2 max-w-3xl font-mono">
-        I'm <span className="text-green-600">Pankaj Kori</span> , a{" "}
+        I&apos;m <span className="text-green-600">Pankaj Kori</span> , a{" "}
         <span className="text-yellow-300">full-stack developer</span> with a
         passion for building fast, scalable, and visually engaging web
         applications, combining front-end creativity with back-end efficiency to
@@ -42,7 +42,7 @@ export default function Home() {
           Explore my work ⬇️
         </Button>
         <Button variant="outline" onClick={gotoLinkedIn}>
-          Let's connect
+          Let&apos;s connect
         </Button>
       </div>
     </div>
