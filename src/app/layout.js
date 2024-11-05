@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
           onClick={toggleDarkMode}
           className="fixed top-4 right-4 bg-gray-200 dark:bg-gray-800 text-black dark:text-white p-2 rounded-full shadow-md transition"
         >
-          {isDarkMode ? "🌞 Light Mode" : "🌙 Dark Mode"}
+          {isDarkMode ? "🌞" : "🌙"}
         </button>
         {children}
         <Footer />
