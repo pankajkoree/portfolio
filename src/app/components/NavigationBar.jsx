@@ -37,10 +37,7 @@ const NavigationBar = () => {
     <div className="relative flex flex-col items-center mt-4">
       {/* Mobile Menu Icon */}
       <div className="flex justify-start w-full md:hidden">
-        <button
-          onClick={toggleMenu}
-          className="p-2 text-white dark:text-gray-300"
-        >
+        <button onClick={toggleMenu} className="p-2 text-black dark:text-white">
           {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}{" "}
           {/* Toggle icon */}
         </button>
