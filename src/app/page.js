@@ -18,7 +18,7 @@ export default function Home() {
       <Image
         src={coder}
         alt="cartoon profile"
-        className="h-[120px] xl:h-[200px] w-[120px] xl:w-[200px] rounded-full mt-6 xl:mt-8"
+        className="h-[120px] xl:h-[250px] w-[120px] xl:w-[250px] rounded-full mt-6 xl:mt-8"
       />
 
       <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mt-4">
@@ -37,11 +37,20 @@ export default function Home() {
         deliver seamless user experiences
       </h3>
 
-      <div className="relative flex flex-col xl:flex-row gap-2 m-4">
-        <Button variant="outline" onClick={gotoProjects}>
-          Explore my work ⬇️
+      <div className="relative flex flex-col xl:flex-row gap-4 m-4 xl:mt-8">
+        <Button
+          variant="outline"
+          onClick={gotoProjects}
+          className="relative xl:text-2xl xl:p-6 font-semibold border-2 border-green-500 text-green-500 hover:bg-green-500 hover:text-white transition-all duration-300 ease-in-out"
+        >
+          Explore my work{" "}
+          <span className="ml-2 inline-block animate-bounce">⬇️</span>
         </Button>
-        <Button variant="outline" onClick={gotoLinkedIn}>
+        <Button
+          variant="outline"
+          onClick={gotoLinkedIn}
+          className="relative px-6 py-3 xl:text-2xl xl:p-6 font-semibold border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition-all duration-300 ease-in-out"
+        >
           Let&apos;s connect
         </Button>
       </div>
