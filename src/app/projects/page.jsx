@@ -149,10 +149,11 @@ const Projects = () => {
           <hr />
           <div className="relative flex flex-col gap-4 mt-4">
             <div>
-              ✅ Provides detailed information about the country's economy
+              ✅ Provides detailed information about the country&apos;s economy
             </div>
             <div>
-              ✅ Shows live data on the country's GDP, inflation, and growth
+              ✅ Shows live data on the country&apos;s GDP, inflation, and
+              growth
             </div>
             <div>
               ✅ Optimized for exploring historical and current statistics
