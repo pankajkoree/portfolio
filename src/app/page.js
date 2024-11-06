@@ -3,6 +3,7 @@ import Image from "next/image";
 import coder from "../../public/coder.jpeg";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
+import linkedin from "../../public/linkedin.png";
 
 export default function Home() {
   const router = useRouter();
@@ -53,6 +54,13 @@ export default function Home() {
           onClick={gotoLinkedIn}
           className="relative px-6 py-3 xl:text-2xl xl:p-6 font-semibold border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition-all duration-300 ease-in-out"
         >
+          <span className="ml-2 inline-block">
+            <Image
+              src={linkedin}
+              alt="linkedin"
+              className="w-[25px] h-[25px]"
+            />
+          </span>
           Let&apos;s connect
         </Button>
       </div>
