@@ -53,7 +53,7 @@ const About = () => {
               </p>
 
               <a
-                href="https://drive.google.com/file/d/1mKJKzkx63imDNou_Ti_ivpQGLOSFC1OP/view?usp=sharing"
+                href="https://drive.google.com/file/d/19zSEre2bin76549quSLXysK7MAxt_yZK/view?usp=sharing"
                 target="_blank"
                 rel="resume"
                 className="relative flex justify-center items-center text-16px xl:text-xl p-2 mt-4 text-white bg-blue-500 dark:bg-purple-700 dark:text-white shadow-md transition duration-300 rounded-full"
