@@ -7,6 +7,7 @@ import focusOnToday from "../../../public/focusOnToday.png";
 import theCountyProject from "../../../public/theCountyProject.png";
 import hamburger from "../../../public/hamburger.png";
 import weatherApp from "../../../public/weatherApp.png";
+import dashboard from "../../../public/dashboard-icon.png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -141,6 +142,7 @@ const Projects = () => {
           />
         </div>
       </div>
+
       <div className="relative flex flex-col md:flex-row max-w-4xl mx-auto border-2 border-blue-300 hover:shadow-md hover:shadow-purple-400 rounded-xl">
         <div className="relative md:w-[50%] w-full h-full md:p-12 p-6">
           <h1 className="text-xl md:text-2xl lg:text-3xl mb-2">
@@ -230,6 +232,35 @@ const Projects = () => {
           <Image
             src={weatherApp}
             alt="weatherApp"
+            className="w-[300px] h-[200px] md:w-[350px] md:h-[260px] lg:w-[400px] lg:h-[270px] rounded-xl transform transition-transform duration-300 hover:scale-110 border-2 border-green-300"
+          />
+        </div>
+      </div>
+
+      <div className="relative flex flex-col md:flex-row max-w-4xl mx-auto border-2 border-blue-300 hover:shadow-md hover:shadow-purple-400 rounded-xl">
+        <div className="relative md:w-[50%] w-full h-full md:p-12 p-6">
+          <h1 className="text-xl md:text-2xl lg:text-3xl mb-2">
+            Dashboard App
+          </h1>
+          <hr />
+          <div className="relative flex flex-col gap-4 mt-4">
+            <div>✅ Track and manage topics of interest in real time</div>
+            <div>✅ Receive timely updates and insights</div>
+            <div>✅ Simple and intuitive interface for easy navigation</div>
+          </div>
+          <div className="mt-8">
+            <Link
+              href="https://dashboard-three-silk.vercel.app/dashboard"
+              target="_blank"
+            >
+              <Button variant="live">View live ↗</Button>
+            </Link>
+          </div>
+        </div>
+        <div className="relative md:w-[50%] w-full h-full md:p-8 p-4 flex justify-center items-center">
+          <Image
+            src={dashboard}
+            alt="dashboard"
             className="w-[300px] h-[200px] md:w-[350px] md:h-[260px] lg:w-[400px] lg:h-[270px] rounded-xl transform transition-transform duration-300 hover:scale-110 border-2 border-green-300"
           />
         </div>
