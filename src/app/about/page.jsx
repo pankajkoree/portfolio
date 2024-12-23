@@ -9,6 +9,7 @@ import tailwind from "../../../public/tailwind.png";
 import node from "../../../public/node.png";
 import express from "../../../public/express.png";
 import mongodb from "../../../public/database.png";
+import mysql from "../../../public/mysql.png";
 import next from "../../../public/next.png";
 import vscode from "../../../public/vscode.png";
 import git from "../../../public/git.png";
@@ -146,6 +147,10 @@ const About = () => {
                 className="w-[20px] h-[20px]"
               />
               <p>Mongo DB</p>
+            </div>
+            <div className="relative flex justify-center items-center gap-1 border-2 border-blue-400 p-2 w-[160px] rounded-full dark:hover:bg-gray-700 hover:bg-blue-200 dark:hover:border-white">
+              <Image src={mysql} alt="mysql" className="w-[20px] h-[20px]" />
+              <p>MySQL</p>
             </div>
           </div>
         </div>
