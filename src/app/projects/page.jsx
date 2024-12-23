@@ -250,7 +250,7 @@ const Projects = () => {
           </div>
           <div className="mt-8">
             <Link
-              href="https://dashboard-three-silk.vercel.app/dashboard"
+              href="https://dashboard-tesla-ui.vercel.app/dashboard"
               target="_blank"
             >
               <Button variant="live">View live ↗</Button>
