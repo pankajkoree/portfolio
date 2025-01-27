@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
         <NavigationBar />
         <button
           onClick={toggleDarkMode}
-          className="fixed top-4 right-4 bg-gray-200 dark:bg-gray-800 text-black dark:text-white p-2 rounded-full shadow-md transition"
+          className="fixed top-4 right-4 bg-gray-300 dark:bg-gray-800 text-black dark:text-white p-2 rounded-full shadow-md transition"
         >
           {isDarkMode ? "🌞" : "🌙"}
         </button>
@@ -48,5 +48,5 @@ export default function RootLayout({ children }) {
         <Footer />
       </body>
     </html>
-  );  
+  );
 }
