@@ -5,14 +5,19 @@ export async function POST(req) {
     const { name, email, message } = await req.json();
 
     if (!name || !email || !message) {
-      return new Response(JSON.stringify({ message: "All fields are required" }), { status: 400 });
+      return new Response(
+        JSON.stringify({ message: "All fields are required" }),
+        { status: 400 }
+      );
     }
 
+    // Mailtrap configuration
     const transporter = nodemailer.createTransport({
-      service: "Gmail",
+      host: "sandbox.smtp.mailtrap.io", // Mailtrap host
+      port: 2525, // Mailtrap port
       auth: {
-        user: process.env.EMAIL_USER, // Your Gmail address
-        pass: process.env.EMAIL_PASS, // Your Gmail password or app-specific password
+        user: process.env.MAILTRAP_USER, // Your Mailtrap username
+        pass: process.env.MAILTRAP_PASS, // Your Mailtrap password
       },
     });
 
@@ -25,11 +30,17 @@ export async function POST(req) {
 
     await transporter.sendMail(mailOptions);
 
-    return new Response(JSON.stringify({ message: "Message sent successfully" }), { status: 200 });
+    return new Response(
+      JSON.stringify({ message: "Message sent successfully" }),
+      { status: 200 }
+    );
   } catch (error) {
     console.error("Error sending email:", error);
     return new Response(
-      JSON.stringify({ message: "Failed to send message", error: error.message }),
+      JSON.stringify({
+        message: "Failed to send message",
+        error: error.message,
+      }),
       { status: 500 }
     );
   }
