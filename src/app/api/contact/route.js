@@ -28,12 +28,15 @@ export default async function handler(req, res) {
       subject: `New Contact Message from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
     };
+    console.log("Mail Options:", mailOptions);
 
     await transporter.sendMail(mailOptions);
 
     res.status(200).json({ message: "Message sent successfully" });
   } catch (error) {
     console.error("Error sending email:", error.message);
-    res.status(500).json({ message: `Failed to send message: ${error.message}` });
+    res
+      .status(500)
+      .json({ message: `Failed to send message: ${error.message}` });
   }
 }
