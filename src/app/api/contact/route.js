@@ -1,42 +1,36 @@
 import nodemailer from "nodemailer";
 
-export default async function handler(req, res) {
-  if (req.method !== "POST") {
-    return res.status(405).json({ message: "Method not allowed" });
-  }
-
-  const { name, email, message } = req.body;
-
-  if (!name || !email || !message) {
-    return res.status(400).json({ message: "All fields are required" });
-  }
-
+export async function POST(req) {
   try {
+    const { name, email, message } = await req.json();
+
+    if (!name || !email || !message) {
+      return new Response(JSON.stringify({ message: "All fields are required" }), { status: 400 });
+    }
+
     const transporter = nodemailer.createTransport({
-      host: "smtp.gmail.com",
-      port: 465,
-      secure: true, // Use SSL
+      service: "Gmail",
       auth: {
-        user: process.env.EMAIL_USER, // Your email address (Gmail)
-        pass: process.env.EMAIL_PASS, // Your app password
+        user: process.env.EMAIL_USER, // Your Gmail address
+        pass: process.env.EMAIL_PASS, // Your Gmail password or app-specific password
       },
     });
 
     const mailOptions = {
-      from: `"${name}" <${email}>`, // Dynamically set "from" from form data
-      to: process.env.RECEIVER_EMAIL, // Email address from .env file
+      from: email, // Use the sender's email from the form
+      to: process.env.RECEIVER_EMAIL, // Your email from .env
       subject: `New Contact Message from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
     };
-    console.log("Mail Options:", mailOptions);
 
     await transporter.sendMail(mailOptions);
 
-    res.status(200).json({ message: "Message sent successfully" });
+    return new Response(JSON.stringify({ message: "Message sent successfully" }), { status: 200 });
   } catch (error) {
-    console.error("Error sending email:", error.message);
-    res
-      .status(500)
-      .json({ message: `Failed to send message: ${error.message}` });
+    console.error("Error sending email:", error);
+    return new Response(
+      JSON.stringify({ message: "Failed to send message", error: error.message }),
+      { status: 500 }
+    );
   }
 }
