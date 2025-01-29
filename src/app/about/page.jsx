@@ -212,11 +212,15 @@ const About = () => {
                 alt="postman"
                 className="w-[20px] h-[20px]"
               />
-              <a href="https://www.postman.com/" target="_blank">Postman</a>
+              <a href="https://www.postman.com/" target="_blank">
+                Postman
+              </a>
             </div>
             <div className="relative flex justify-center items-center gap-1 border-2 border-blue-400 p-2 w-[150px] rounded-full dark:hover:bg-gray-700 hover:bg-blue-200 dark:hover:border-white">
               <Image src={shadcn} alt="shadcn" className="w-[20px] h-[20px]" />
-              <p>Shadcn UI</p>
+              <a href="https://ui.shadcn.com/" target="_blank">
+                Shadcn UI
+              </a>
             </div>
             <div className="relative flex justify-center items-center gap-1 border-2 border-blue-400 p-2 w-[100px] rounded-full dark:hover:bg-gray-700 hover:bg-blue-200 dark:hover:border-white">
               <Image src={npm} alt="npm" className="w-[20px] h-[20px]" />
