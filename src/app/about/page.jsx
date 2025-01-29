@@ -86,11 +86,11 @@ const About = () => {
           <div className="relative flex gap-2 flex-wrap">
             <div className="relative flex justify-center items-center gap-1 border-2 border-blue-400 p-2 w-[120px] rounded-full dark:hover:bg-gray-700 hover:bg-blue-200 dark:hover:border-white">
               <Image src={html} alt="html" className="w-[20px] h-[20px]" />
-              <p>HTML</p>
+              <a href="https://html.spec.whatwg.org/" target="_blank">HTML</a>
             </div>
             <div className="relative flex justify-center items-center gap-1 border-2 border-blue-400 p-2 w-[100px] rounded-full dark:hover:bg-gray-700 hover:bg-blue-200 dark:hover:border-white">
               <Image src={css} alt="css" className="w-[20px] h-[20px]" />
-              <p>CSS</p>
+              <a>CSS</a>
             </div>
             <div className="relative flex justify-center items-center gap-1 border-2 border-blue-400 p-2 w-[150px] rounded-full dark:hover:bg-gray-700 hover:bg-blue-200 dark:hover:border-white">
               <Image src={js} alt="js" className="w-[20px] h-[20px]" />
