@@ -158,7 +158,9 @@ const About = () => {
             </div>
             <div className="relative flex justify-center items-center gap-1 border-2 border-blue-400 p-2 w-[150px] rounded-full dark:hover:bg-gray-700 hover:bg-blue-200 dark:hover:border-white">
               <Image src={next} alt="next" className="w-[20px] h-[20px]" />
-              <a href="https://nextjs.org/" target="_blank">Next JS</a>
+              <a href="https://nextjs.org/" target="_blank">
+                Next JS
+              </a>
             </div>
             <div className="relative flex justify-center items-center gap-1 border-2 border-blue-400 p-2 w-[160px] rounded-full dark:hover:bg-gray-700 hover:bg-blue-200 dark:hover:border-white">
               <Image
@@ -166,11 +168,15 @@ const About = () => {
                 alt="mongodb"
                 className="w-[20px] h-[20px]"
               />
-              <a href="https://www.mongodb.com/" target="_blank">Mongo DB</a>
+              <a href="https://www.mongodb.com/" target="_blank">
+                Mongo DB
+              </a>
             </div>
             <div className="relative flex justify-center items-center gap-1 border-2 border-blue-400 p-2 w-[160px] rounded-full dark:hover:bg-gray-700 hover:bg-blue-200 dark:hover:border-white">
               <Image src={mysql} alt="mysql" className="w-[20px] h-[20px]" />
-              <a href="https://www.mysql.com/" target="_blank">MySQL</a>
+              <a href="https://www.mysql.com/" target="_blank">
+                MySQL
+              </a>
             </div>
           </div>
         </div>
@@ -190,7 +196,7 @@ const About = () => {
           <div className="relative flex gap-2 flex-wrap">
             <div className="relative flex justify-center items-center gap-1 border-2 border-blue-400 p-2 w-[120px] rounded-full dark:hover:bg-gray-700 hover:bg-blue-200 dark:hover:border-white">
               <Image src={vscode} alt="vscode" className="w-[20px] h-[20px]" />
-              <p>VS code</p>
+              <a href="https://code.visualstudio.com/" target="_blank">VS code</a>
             </div>
             <div className="relative flex justify-center items-center gap-1 border-2 border-blue-400 p-2 w-[100px] rounded-full dark:hover:bg-gray-700 hover:bg-blue-200 dark:hover:border-white">
               <Image src={git} alt="git" className="w-[20px] h-[20px]" />
