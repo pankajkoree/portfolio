@@ -106,7 +106,7 @@ const About = () => {
                 alt="tailwind"
                 className="w-[20px] h-[20px]"
               />
-              <p>Tailwind</p>
+              <a href="https://tailwindcss.com/" target="_blank">Tailwind</a>
             </div>
           </div>
         </div>
