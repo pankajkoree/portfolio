@@ -196,11 +196,15 @@ const About = () => {
           <div className="relative flex gap-2 flex-wrap">
             <div className="relative flex justify-center items-center gap-1 border-2 border-blue-400 p-2 w-[120px] rounded-full dark:hover:bg-gray-700 hover:bg-blue-200 dark:hover:border-white">
               <Image src={vscode} alt="vscode" className="w-[20px] h-[20px]" />
-              <a href="https://code.visualstudio.com/" target="_blank">VS code</a>
+              <a href="https://code.visualstudio.com/" target="_blank">
+                VS code
+              </a>
             </div>
             <div className="relative flex justify-center items-center gap-1 border-2 border-blue-400 p-2 w-[100px] rounded-full dark:hover:bg-gray-700 hover:bg-blue-200 dark:hover:border-white">
               <Image src={git} alt="git" className="w-[20px] h-[20px]" />
-              <a href="https://git-scm.com/" target="_blank">Git</a>
+              <a href="https://git-scm.com/" target="_blank">
+                Git
+              </a>
             </div>
             <div className="relative flex justify-center items-center gap-1 border-2 border-blue-400 p-2 w-[150px] rounded-full dark:hover:bg-gray-700 hover:bg-blue-200 dark:hover:border-white">
               <Image
@@ -208,7 +212,7 @@ const About = () => {
                 alt="postman"
                 className="w-[20px] h-[20px]"
               />
-              <p>Postman</p>
+              <a href="https://www.postman.com/" target="_blank">Postman</a>
             </div>
             <div className="relative flex justify-center items-center gap-1 border-2 border-blue-400 p-2 w-[150px] rounded-full dark:hover:bg-gray-700 hover:bg-blue-200 dark:hover:border-white">
               <Image src={shadcn} alt="shadcn" className="w-[20px] h-[20px]" />
