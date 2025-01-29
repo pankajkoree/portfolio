@@ -166,7 +166,7 @@ const About = () => {
                 alt="mongodb"
                 className="w-[20px] h-[20px]"
               />
-              <p>Mongo DB</p>
+              <a href="https://www.mongodb.com/" target="_blank">Mongo DB</a>
             </div>
             <div className="relative flex justify-center items-center gap-1 border-2 border-blue-400 p-2 w-[160px] rounded-full dark:hover:bg-gray-700 hover:bg-blue-200 dark:hover:border-white">
               <Image src={mysql} alt="mysql" className="w-[20px] h-[20px]" />
