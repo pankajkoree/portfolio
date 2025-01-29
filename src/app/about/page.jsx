@@ -86,19 +86,33 @@ const About = () => {
           <div className="relative flex gap-2 flex-wrap">
             <div className="relative flex justify-center items-center gap-1 border-2 border-blue-400 p-2 w-[120px] rounded-full dark:hover:bg-gray-700 hover:bg-blue-200 dark:hover:border-white">
               <Image src={html} alt="html" className="w-[20px] h-[20px]" />
-              <a href="https://html.spec.whatwg.org/" target="_blank">HTML</a>
+              <a href="https://html.spec.whatwg.org/" target="_blank">
+                HTML
+              </a>
             </div>
             <div className="relative flex justify-center items-center gap-1 border-2 border-blue-400 p-2 w-[100px] rounded-full dark:hover:bg-gray-700 hover:bg-blue-200 dark:hover:border-white">
               <Image src={css} alt="css" className="w-[20px] h-[20px]" />
-              <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank">CSS</a>
+              <a
+                href="https://www.w3.org/Style/CSS/Overview.en.html"
+                target="_blank"
+              >
+                CSS
+              </a>
             </div>
             <div className="relative flex justify-center items-center gap-1 border-2 border-blue-400 p-2 w-[150px] rounded-full dark:hover:bg-gray-700 hover:bg-blue-200 dark:hover:border-white">
               <Image src={js} alt="js" className="w-[20px] h-[20px]" />
-              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                target="_blank"
+              >
+                JavaScript
+              </a>
             </div>
             <div className="relative flex justify-center items-center gap-1 border-2 border-blue-400 p-2 w-[150px] rounded-full dark:hover:bg-gray-700 hover:bg-blue-200 dark:hover:border-white">
               <Image src={react} alt="react" className="w-[20px] h-[20px]" />
-              <a href="https://react.dev/" target="_blank">React JS</a>
+              <a href="https://react.dev/" target="_blank">
+                React JS
+              </a>
             </div>
             <div className="relative flex justify-center items-center gap-1 border-2 border-blue-400 p-2 w-[150px] rounded-full dark:hover:bg-gray-700 hover:bg-blue-200 dark:hover:border-white">
               <Image
@@ -106,7 +120,9 @@ const About = () => {
                 alt="tailwind"
                 className="w-[20px] h-[20px]"
               />
-              <a href="https://tailwindcss.com/" target="_blank">Tailwind</a>
+              <a href="https://tailwindcss.com/" target="_blank">
+                Tailwind
+              </a>
             </div>
           </div>
         </div>
@@ -125,7 +141,9 @@ const About = () => {
           <div className="relative flex gap-2 flex-wrap">
             <div className="relative flex justify-center items-center gap-1 border-2 border-blue-400 p-2 w-[135px] rounded-full dark:hover:bg-gray-700 hover:bg-blue-200 dark:hover:border-white">
               <Image src={node} alt="node" className="w-[20px] h-[20px]" />
-              <a href="https://nodejs.org/en" target="_blank">Node JS</a>
+              <a href="https://nodejs.org/en" target="_blank">
+                Node JS
+              </a>
             </div>
 
             <div className="relative flex justify-center items-center gap-1 border-2 border-blue-400 p-2 w-[150px] rounded-full dark:hover:bg-gray-700 hover:bg-blue-200 dark:hover:border-white">
@@ -134,11 +152,13 @@ const About = () => {
                 alt="express"
                 className="w-[20px] h-[20px]"
               />
-              <a href="https://expressjs.com/" target="_blank">Express JS</a>
+              <a href="https://expressjs.com/" target="_blank">
+                Express JS
+              </a>
             </div>
             <div className="relative flex justify-center items-center gap-1 border-2 border-blue-400 p-2 w-[150px] rounded-full dark:hover:bg-gray-700 hover:bg-blue-200 dark:hover:border-white">
               <Image src={next} alt="next" className="w-[20px] h-[20px]" />
-              <p>Next JS</p>
+              <a href="https://nextjs.org/" target="_blank">Next JS</a>
             </div>
             <div className="relative flex justify-center items-center gap-1 border-2 border-blue-400 p-2 w-[160px] rounded-full dark:hover:bg-gray-700 hover:bg-blue-200 dark:hover:border-white">
               <Image
