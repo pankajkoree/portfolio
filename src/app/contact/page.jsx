@@ -27,7 +27,7 @@ const Contact = () => {
       toast.success("Form submitted successfully");
       e.target.reset();
     } else {
-      toast.error("form not submitted");
+      toast.error("form submission failed");
     }
   };
 
