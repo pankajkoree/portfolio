@@ -1,42 +1,33 @@
 "use client";
 
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import toast from "react-hot-toast";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const [status, setStatus] = useState(null);
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setStatus(null);
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
-        setFormData({ name: "", email: "", message: "" });
-        setStatus("Message sent successfully!");
-      } else {
-        setStatus("Failed to send message.");
-      }
-    } catch (error) {
-      console.error("Error:", error);
-      setStatus("An error occurred. Please try again.");
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        access_key: process.env.NEXT_PUBLIC_ACCESS_KEY,
+        name: e.target.name.value,
+        email: e.target.email.value,
+        message: e.target.message.value,
+      }),
+    });
+    const result = await response.json();
+    if (result.success) {
+      toast.success("Form submitted successfully");
+      e.target.reset();
+    } else {
+      toast.error("form not submitted");
     }
   };
 
@@ -65,8 +56,6 @@ const Contact = () => {
               name="name"
               placeholder="Your Name"
               required
-              value={formData.name}
-              onChange={handleChange}
               className="h-[45px] sm:h-[50px] rounded-xl border border-blue-300"
             />
           </div>
@@ -84,8 +73,6 @@ const Contact = () => {
               name="email"
               placeholder="Your Email"
               required
-              value={formData.email}
-              onChange={handleChange}
               className="h-[45px] sm:h-[50px] rounded-xl border-blue-300"
             />
           </div>
@@ -103,8 +90,6 @@ const Contact = () => {
               rows="4"
               placeholder="Your Message..."
               required
-              value={formData.message}
-              onChange={handleChange}
               className="h-[90px] xl:h-[120px] rounded-xl border-blue-300"
             ></Textarea>
           </div>
@@ -115,8 +100,6 @@ const Contact = () => {
             </Button>
           </div>
         </form>
-
-        {status && <p className="text-center mt-4">{status}</p>}
       </div>
     </div>
   );

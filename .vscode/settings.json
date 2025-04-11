@@ -1,14 +1,15 @@
 {
-    "cSpell.words": [
-        "apos",
-        "Consolas",
-        "Kori",
-        "Menlo",
-        "myimage",
-        "Neue",
-        "pankajkoree",
-        "Segoe",
-        "shadcn",
-        "sololearn"
-    ]
+  "cSpell.words": [
+    "apos",
+    "Consolas",
+    "Kori",
+    "Menlo",
+    "myimage",
+    "Neue",
+    "pankajkoree",
+    "Segoe",
+    "shadcn",
+    "sololearn"
+  ],
+  "postman.settings.dotenv-detection-notification-visibility": false
 }

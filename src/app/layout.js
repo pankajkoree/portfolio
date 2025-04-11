@@ -1,4 +1,5 @@
 "use client";
+import { Toaster } from "react-hot-toast";
 import Footer from "./components/Footer";
 import NavigationBar from "./components/NavigationBar";
 import "./globals.css";
@@ -45,6 +46,7 @@ export default function RootLayout({ children }) {
           {isDarkMode ? "🌞" : "🌙"}
         </button>
         {children}
+        <Toaster position="top-center" reverseOrder={false} />
         <Footer />
       </body>
     </html>
