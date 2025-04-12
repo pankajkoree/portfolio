@@ -54,7 +54,7 @@ const About = () => {
               </p>
 
               <a
-                href="https://drive.google.com/file/d/1Wcbr-DxOT_8RTbnfbGoGBbCyiUjP05Tb/view?usp=sharing"
+                href="https://drive.google.com/file/d/1hJs5uA-94PIJlNUVbP_wIaWPYaHrUNI7/view?usp=sharing"
                 target="_blank"
                 rel="resume"
                 className="relative flex justify-center items-center text-16px xl:text-xl p-2 mt-4 text-white bg-blue-500 dark:bg-purple-700 dark:text-white shadow-md transition duration-300 rounded-full"
