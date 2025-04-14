@@ -16,6 +16,7 @@ import git from "../../../public/git.png";
 import postman from "../../../public/postman.png";
 import shadcn from "../../../public/shadcn.jpg";
 import npm from "../../../public/npm.png";
+import aceternity from "../../../public/aceternity.png";
 
 const About = () => {
   return (
@@ -220,6 +221,16 @@ const About = () => {
               <Image src={shadcn} alt="shadcn" className="w-[20px] h-[20px]" />
               <a href="https://ui.shadcn.com/" target="_blank">
                 Shadcn UI
+              </a>
+            </div>
+            <div className="relative flex justify-center items-center gap-1 border-2 border-blue-400 p-2 w-[150px] rounded-full dark:hover:bg-gray-700 hover:bg-blue-200 dark:hover:border-white">
+              <Image
+                src={aceternity}
+                alt="aceternity"
+                className="w-[20px] h-[20px]"
+              />
+              <a href="https://ui.aceternity.com/" target="_blank">
+                Aceternity UI
               </a>
             </div>
             <div className="relative flex justify-center items-center gap-1 border-2 border-blue-400 p-2 w-[100px] rounded-full dark:hover:bg-gray-700 hover:bg-blue-200 dark:hover:border-white">
